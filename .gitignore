@@ -1,0 +1,9 @@
+# virtual environment 
+automatic_realeases/
+__pycache__/
+
+# credentials
+.env
+
+# [DEV] test files
+file.py
