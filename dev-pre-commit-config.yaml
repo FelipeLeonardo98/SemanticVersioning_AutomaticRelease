@@ -1,0 +1,11 @@
+repos:
+
+  - repo: https://github.com/pre-commit/mirrors-pyupgrade
+    rev: v2.25.0
+    hooks:
+      - id: pyupgrade
+
+  - repo: https://github.com/pre-commit/mirrors-pip-tools
+    rev: v5.5.0
+    hooks:
+      - id: pip-compile

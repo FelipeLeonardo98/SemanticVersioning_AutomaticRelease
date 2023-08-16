@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask = "==2.1.2"
 requests = "*"
+pre-commit = "*"
 
 [dev-packages]
 

@@ -1,8 +1,11 @@
+# Python libs
 from flask import Flask, request, jsonify
 import json
 
+# Starting API
 app = Flask(__name__)
 
+# Routes (endpoints)
 @app.route("/", methods=['GET'])
 def base():
     return "<p> main route </p>"
