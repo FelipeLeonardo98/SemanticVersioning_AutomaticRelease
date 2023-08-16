@@ -2,9 +2,9 @@ repos:
 
   - repo: local
     hooks:
-    -   id: update-code
+    -   id: update-code-requirements
         name: Update Requirements
-        entry: bash -c 'pip freeze > requirements.txt'
+        entry: bash -c 'pip freeze > requirements.txt && git add requirements.txt'
         language: system
     -   id: git-remove-index-lock
         name: Git remove index.lock file
