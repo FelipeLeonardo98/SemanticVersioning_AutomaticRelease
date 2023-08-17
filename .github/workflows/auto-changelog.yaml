@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Update CHANGELOG.md
-        uses: requarks/changelog-action@v2.1.0
+        uses: requarks/changelog-action@v2.3.0
         with:
           changelog-file: CHANGELOG.md
