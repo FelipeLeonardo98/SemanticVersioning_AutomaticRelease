@@ -1,16 +1,16 @@
-on:
-  release:
-    types:
-      - created
+# on:
+#   release:
+#     types:
+#       - created
 
-jobs:
-  update-changelog:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+# jobs:
+#   update-changelog:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
 
-      - name: Update CHANGELOG.md
-        uses: requarks/changelog-action@v2.3.0
-        with:
-          changelog-file: CHANGELOG.md
+#       - name: Update CHANGELOG.md
+#         uses: requarks/changelog-action@v2.3.0
+#         with:
+#           changelog-file: CHANGELOG.md

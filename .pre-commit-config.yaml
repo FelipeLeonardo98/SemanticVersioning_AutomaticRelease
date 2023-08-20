@@ -4,7 +4,7 @@ repos:
     hooks:
     -   id: update-code-requirements
         name: Update Requirements
-        entry: bash -c '.\automatic_releases\Scripts\activate; pip freeze > requirements.txt && git add requirements.txt'
+        entry: bash -c './automatic_releases/Scripts/activate && pip freeze > requirements.txt && git add requirements.txt'
         language: system
     -   id: git-remove-index-lock
         name: Git remove index.lock file
