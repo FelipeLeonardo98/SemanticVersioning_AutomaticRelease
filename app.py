@@ -14,5 +14,9 @@ def base():
 def receive_json():
     return json.dumps(request.get_json())
 
+@app.route('/send_json2', methods=['POST'])
+def receive_json2():
+    return json.dumps(request.get_json())
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001, debug=True)
