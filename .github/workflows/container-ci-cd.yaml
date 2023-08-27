@@ -1,0 +1,25 @@
+# name: Container Pipeline
+
+# on:
+#   push:
+#     tags:
+#       - 'v*'
+
+# jobs:
+#   build-and-push-container:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v2
+
+#       - name: Print Tag name
+#         run: echo $(shell ${{ github.ref }}) 
+
+#       - name: Build and Push Docker Image
+#         uses: mr-smithers-excellent/docker-build-push@v5
+#         with:
+#           image: felipeleonardo/flask-app-semantic-versioning
+#           tags: $( echo ${ github.ref })
+#           registry: docker.io
+#           username: ${{ secrets.DOCKER_HUB_USER }}
+#           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
