@@ -1,0 +1,21 @@
+name: Tag Pushed Workflow
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  print-tag-name:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Tag Name
+        id: set-tag-name
+        run: echo "::set-output name=TAG_NAME::${GITHUB_REF#refs/tags/}"
+
+      - name: Print Tag Name
+        run: echo "Pushed Tag: ${{ steps.set-tag-name.outputs.TAG_NAME }}"
